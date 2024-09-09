@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    .//<input type="number" id="num" placeholder="Enter your age">
+    <br/><br/>
+    <button onclick="f1()"> submit</button>
+    <p id="para"></p>       
+
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var n=document.getElementById("num").value;
+            var x=parseInt(n);
+
+            if(x<18){
+                 p.innerHTML = "you are eligible for a vote";
+            }
+            else{
+                p.innerHTML = "you are not eligible for a vote";
+            }
+            
+
+        }
+   </script>
+</body>
+</html>
